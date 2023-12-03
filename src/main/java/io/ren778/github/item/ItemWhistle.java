@@ -1,6 +1,7 @@
 package io.ren778.github.item;
 
 import io.ren778.github.registers.WhistleModSounds;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
@@ -24,13 +25,17 @@ public class ItemWhistle extends Item {
     public InteractionResultHolder<ItemStack> use(Level world, Player player, InteractionHand hand) {
         ItemStack stack = player.getItemInHand(hand);
 
-        for (Player target:world.players()) {
-            if (!(target.getUUID() == player.getUUID())) {
-                target.teleportTo(player.position().x, player.position().y, player.position().z);
+        if (world.players().size() > 1) {
+            for (Player target:world.players()) {
+                if (!(target.getUUID() == player.getUUID())) {
+                    target.teleportTo(player.position().x, player.position().y, player.position().z);
+                }
             }
-        }
 
-        world.playSound(null, player.position().x, player.position().y, player.position().z, WhistleModSounds.WHISTLE_CLICK.get(), SoundSource.MASTER, 1, 1);
+            world.playSound(null, player.position().x, player.position().y, player.position().z, WhistleModSounds.WHISTLE_CLICK.get(), SoundSource.MASTER, 1, 1);
+        } else {
+            player.displayClientMessage(Component.literal(Component.translatable("string.whistle_cannotuse").getString()), true);
+        }
 
         return InteractionResultHolder.consume(stack);
     }
