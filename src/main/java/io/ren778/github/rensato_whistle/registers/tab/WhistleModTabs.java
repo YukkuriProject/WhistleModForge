@@ -1,13 +1,12 @@
-package io.ren778.github.registers.tab;
+package io.ren778.github.rensato_whistle.registers.tab;
 
-import io.ren778.github.main.WhistleMod;
-import io.ren778.github.registers.WhistleModItems;
+import io.ren778.github.rensato_whistle.main.WhistleMod;
+import io.ren778.github.rensato_whistle.registers.WhistleModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 

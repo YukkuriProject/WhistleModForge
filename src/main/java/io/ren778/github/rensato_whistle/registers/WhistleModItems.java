@@ -1,7 +1,7 @@
-package io.ren778.github.registers;
+package io.ren778.github.rensato_whistle.registers;
 
-import io.ren778.github.item.ItemWhistle;
-import io.ren778.github.main.WhistleMod;
+import io.ren778.github.rensato_whistle.item.ItemWhistle;
+import io.ren778.github.rensato_whistle.main.WhistleMod;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
