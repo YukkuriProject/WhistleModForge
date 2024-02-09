@@ -1,7 +1,7 @@
-package io.ren778.github.rensato_whistle.registers.tab;
+package io.rensatopc.github.rensato_whistle.registers.tab;
 
-import io.ren778.github.rensato_whistle.main.WhistleMod;
-import io.ren778.github.rensato_whistle.registers.WhistleModItems;
+import io.rensatopc.github.rensato_whistle.main.WhistleMod;
+import io.rensatopc.github.rensato_whistle.registers.WhistleModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;

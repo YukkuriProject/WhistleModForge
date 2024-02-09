@@ -1,6 +1,6 @@
-package io.ren778.github.rensato_whistle.item;
+package io.rensatopc.github.rensato_whistle.item;
 
-import io.ren778.github.rensato_whistle.registers.WhistleModSounds;
+import io.rensatopc.github.rensato_whistle.registers.WhistleModSounds;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
@@ -11,8 +11,8 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.level.Level;
 
-public class ItemWhistleOld extends Item {
-    public ItemWhistleOld() {
+public class ItemWhistle extends Item {
+    public ItemWhistle() {
         super(new Properties()
                 .rarity(Rarity.COMMON)
                 .stacksTo(1)

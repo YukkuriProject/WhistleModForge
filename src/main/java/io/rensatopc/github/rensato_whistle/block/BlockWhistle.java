@@ -1,6 +1,6 @@
-package io.ren778.github.rensato_whistle.block;
+package io.rensatopc.github.rensato_whistle.block;
 
-import io.ren778.github.rensato_whistle.registers.WhistleModSounds;
+import io.rensatopc.github.rensato_whistle.registers.WhistleModSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundSource;

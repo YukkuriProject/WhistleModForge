@@ -1,9 +1,9 @@
-package io.ren778.github.rensato_whistle.main;
+package io.rensatopc.github.rensato_whistle.main;
 
-import io.ren778.github.rensato_whistle.registers.WhistleModBlocks;
-import io.ren778.github.rensato_whistle.registers.WhistleModItems;
-import io.ren778.github.rensato_whistle.registers.WhistleModSounds;
-import io.ren778.github.rensato_whistle.registers.tab.WhistleModTabs;
+import io.rensatopc.github.rensato_whistle.registers.WhistleModBlocks;
+import io.rensatopc.github.rensato_whistle.registers.WhistleModItems;
+import io.rensatopc.github.rensato_whistle.registers.WhistleModSounds;
+import io.rensatopc.github.rensato_whistle.registers.tab.WhistleModTabs;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
