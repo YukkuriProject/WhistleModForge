@@ -33,7 +33,7 @@ public class BlockWhistle extends Block {
 
             level.playSound(null, pos.getX(), pos.getY(), pos.getZ(), WhistleModSounds.WHISTLE_CLICK.get(), SoundSource.MASTER, 1, 1);
         } else {
-            player.displayClientMessage(Component.literal(Component.translatable("string.whistle_cannotuse").getString()), true);
+            player.displayClientMessage(Component.translatable("string.whistle_cannotuse"), true);
         }
 
         return InteractionResult.SUCCESS;

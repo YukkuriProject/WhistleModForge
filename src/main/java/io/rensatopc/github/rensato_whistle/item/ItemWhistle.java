@@ -32,7 +32,7 @@ public class ItemWhistle extends Item {
 
             world.playSound(null, player.position().x, player.position().y, player.position().z, WhistleModSounds.WHISTLE_CLICK.get(), SoundSource.MASTER, 1, 1);
         } else {
-            player.displayClientMessage(Component.literal(Component.translatable("string.whistle_cannotuse").getString()), true);
+            player.displayClientMessage(Component.translatable("string.whistle_cannotuse"), true);
         }
 
         return InteractionResultHolder.consume(stack);
