@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "rensato_whistle:block/whistle_block"
+    }
+  }
+}
