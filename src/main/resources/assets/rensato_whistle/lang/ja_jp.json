@@ -3,5 +3,5 @@
 
   "item.rensato_whistle.whistle": "ホイッスル",
   "block.rensato_whistle.whistle_block": "ホイッスルブロック",
-  "string.whistle_cannotuse": "このワールドにプレイヤーがいる場合のみ使用できます"
+  "string.whistle_cannotuse": "このワールドに他のプレイヤーがいる場合のみ使用できます"
 }
