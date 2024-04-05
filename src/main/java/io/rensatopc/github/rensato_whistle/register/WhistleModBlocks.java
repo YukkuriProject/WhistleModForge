@@ -1,9 +1,8 @@
-package io.rensatopc.github.rensato_whistle.registers;
+package io.rensatopc.github.rensato_whistle.register;
 
 import io.rensatopc.github.rensato_whistle.block.BlockWhistle;
 import io.rensatopc.github.rensato_whistle.main.WhistleMod;
 import net.minecraft.world.level.block.Block;
-import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;

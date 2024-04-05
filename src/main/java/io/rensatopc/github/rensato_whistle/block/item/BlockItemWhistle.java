@@ -1,4 +1,4 @@
-package io.rensatopc.github.rensato_whistle.block.items;
+package io.rensatopc.github.rensato_whistle.block.item;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.Block;

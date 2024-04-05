@@ -1,4 +1,4 @@
-package io.rensatopc.github.rensato_whistle.registers;
+package io.rensatopc.github.rensato_whistle.register;
 
 import io.rensatopc.github.rensato_whistle.main.WhistleMod;
 import net.minecraft.resources.ResourceLocation;

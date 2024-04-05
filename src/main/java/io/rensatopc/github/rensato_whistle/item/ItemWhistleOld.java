@@ -1,6 +1,6 @@
 package io.rensatopc.github.rensato_whistle.item;
 
-import io.rensatopc.github.rensato_whistle.registers.WhistleModSounds;
+import io.rensatopc.github.rensato_whistle.register.WhistleModSounds;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;

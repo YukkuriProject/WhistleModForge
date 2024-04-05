@@ -1,6 +1,6 @@
-package io.rensatopc.github.rensato_whistle.registers;
+package io.rensatopc.github.rensato_whistle.register;
 
-import io.rensatopc.github.rensato_whistle.block.items.BlockItemWhistle;
+import io.rensatopc.github.rensato_whistle.block.item.BlockItemWhistle;
 import io.rensatopc.github.rensato_whistle.item.ItemWhistle;
 import io.rensatopc.github.rensato_whistle.main.WhistleMod;
 import net.minecraft.world.item.BlockItem;
