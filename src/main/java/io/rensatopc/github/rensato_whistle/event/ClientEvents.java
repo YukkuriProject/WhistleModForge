@@ -13,6 +13,8 @@ import net.minecraftforge.client.event.RegisterKeyMappingsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
+import java.util.Set;
+
 public class ClientEvents {
     @Mod.EventBusSubscriber(modid = WhistleMod.MOD_ID, value = Dist.CLIENT)
     public static class ClientForgeEvents {
@@ -21,7 +23,7 @@ public class ClientEvents {
             if (KeyBinds.WHISTLING_KEY.consumeClick()) {
                 if (Minecraft.getInstance().player != null) {
                     Inventory inventory = Minecraft.getInstance().player.getInventory();
-                    if (inventory.contains(WhistleModItems.WHISTLE.get().getDefaultInstance())) {
+                    if (inventory.hasAnyOf(Set.of(WhistleModItems.WHISTLE.get()))) {
                         ModNetworking.sendToServer(new WhistleC2SPacket());
                     }
                 }
