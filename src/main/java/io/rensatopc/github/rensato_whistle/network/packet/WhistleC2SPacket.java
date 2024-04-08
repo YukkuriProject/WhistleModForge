@@ -35,7 +35,7 @@ public class WhistleC2SPacket {
 
             ItemWhistle whistle = (ItemWhistle) WhistleModItems.WHISTLE.get();
 
-            Inventory inventory = Minecraft.getInstance().player.getInventory();
+            Inventory inventory = player.getInventory();
             if (inventory.hasAnyOf(Set.of(WhistleModItems.WHISTLE.get()))) {
                 if (!player.getCooldowns().isOnCooldown(whistle)) {
                     Whistle.use(level, player, whistle);
