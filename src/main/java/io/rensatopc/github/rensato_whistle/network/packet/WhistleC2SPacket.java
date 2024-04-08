@@ -1,10 +1,8 @@
 package io.rensatopc.github.rensato_whistle.network.packet;
 
 import io.rensatopc.github.rensato_whistle.item.ItemWhistle;
-import io.rensatopc.github.rensato_whistle.network.ModNetworking;
 import io.rensatopc.github.rensato_whistle.register.WhistleModItems;
 import io.rensatopc.github.rensato_whistle.util.Whistle;
-import net.minecraft.client.Minecraft;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;

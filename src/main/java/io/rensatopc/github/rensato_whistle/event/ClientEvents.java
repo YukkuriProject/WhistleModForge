@@ -13,8 +13,6 @@ import net.minecraftforge.client.event.RegisterKeyMappingsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
-import java.util.Set;
-
 public class ClientEvents {
     @Mod.EventBusSubscriber(modid = WhistleMod.MOD_ID, value = Dist.CLIENT)
     public static class ClientForgeEvents {
