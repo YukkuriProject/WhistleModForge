@@ -22,10 +22,7 @@ public class ClientEvents {
         public static void onKeyInput(InputEvent.Key event) {
             if (KeyBinds.WHISTLING_KEY.consumeClick()) {
                 if (Minecraft.getInstance().player != null) {
-                    Inventory inventory = Minecraft.getInstance().player.getInventory();
-                    if (inventory.hasAnyOf(Set.of(WhistleModItems.WHISTLE.get()))) {
-                        ModNetworking.sendToServer(new WhistleC2SPacket());
-                    }
+                    ModNetworking.sendToServer(new WhistleC2SPacket());
                 }
             }
         }

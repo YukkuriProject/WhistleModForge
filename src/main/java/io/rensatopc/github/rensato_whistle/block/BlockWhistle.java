@@ -12,6 +12,8 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 
+import java.util.Set;
+
 public class BlockWhistle extends Block {
     public BlockWhistle() {
         super(Properties.of()
@@ -23,7 +25,7 @@ public class BlockWhistle extends Block {
     public InteractionResult use(BlockState blockState, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
         ItemWhistle whistle = (ItemWhistle) WhistleModItems.WHISTLE.get();
 
-        if (player.getInventory().contains(whistle.getDefaultInstance())) {
+        if (player.getInventory().hasAnyOf(Set.of(whistle))) {
             if (!player.getCooldowns().isOnCooldown(whistle)) {
                 Whistle.use(level, player, whistle);
             }
