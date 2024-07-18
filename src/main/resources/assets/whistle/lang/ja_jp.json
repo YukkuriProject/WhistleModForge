@@ -1,0 +1,7 @@
+{
+  "itemGroup.whistle_main": "ホイッスルMod",
+
+  "item.whistle.whistle": "ホイッスル",
+  "block.whistle.whistle_block": "ホイッスルブロック",
+  "string.whistle.whistle_cannotuse": "このワールドに他のプレイヤーがいる場合のみ使用できます"
+}

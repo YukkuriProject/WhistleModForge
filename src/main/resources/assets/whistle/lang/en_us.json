@@ -1,0 +1,7 @@
+{
+  "itemGroup.whistle_main": "Whistle Mod",
+
+  "item.whistle.whistle": "Whistle",
+  "block.whistle.whistle_block": "Whistle Block",
+  "string.whistle.whistle_cannotuse": "You can use this if world have other player"
+}
