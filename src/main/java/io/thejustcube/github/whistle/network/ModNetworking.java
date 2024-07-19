@@ -18,8 +18,8 @@ public class ModNetworking {
     public static void register() {
         MOD_INSTANCE = ChannelBuilder.named(new ResourceLocation(WhistleMod.MOD_ID, "networking"))
                 .networkProtocolVersion(1)
-                .clientAcceptedVersions((s, i) -> true)
-                .serverAcceptedVersions((s, i) -> true)
+                .clientAcceptedVersions((s, v) -> true)
+                .serverAcceptedVersions((s, v) -> true)
                 .simpleChannel();
 
         MOD_INSTANCE.messageBuilder(WhistleC2SPacket.class, id(), NetworkDirection.PLAY_TO_SERVER)

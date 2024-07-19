@@ -3,5 +3,7 @@
 
   "item.whistle.whistle": "ホイッスル",
   "block.whistle.whistle_block": "ホイッスルブロック",
-  "string.whistle.whistle_cannotuse": "このワールドに他のプレイヤーがいる場合のみ使用できます"
+  "string.whistle.whistle_cannotuse": "このワールドに他のプレイヤーがいる場合のみ使用できます",
+  "key.category.whistle.main": "ホイッスルMod",
+  "key.whistle.whistling": "ホイッスルを吹く"
 }
