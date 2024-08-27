@@ -1,7 +1,7 @@
 package io.thejustcube.github.whistle.network;
 
 import io.thejustcube.github.whistle.main.WhistleMod;
-import io.thejustcube.github.whistle.network.packet.WhistleC2SPacket;
+import io.thejustcube.github.whistle.network.packet.WhistlingPacket;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.network.*;
 
@@ -22,10 +22,10 @@ public class ModNetworking {
                 .serverAcceptedVersions((s, v) -> true)
                 .simpleChannel();
 
-        MOD_INSTANCE.messageBuilder(WhistleC2SPacket.class, id(), NetworkDirection.PLAY_TO_SERVER)
-                .decoder(WhistleC2SPacket::new)
-                .encoder(WhistleC2SPacket::toBytes)
-                .consumerMainThread(WhistleC2SPacket::handle)
+        MOD_INSTANCE.messageBuilder(WhistlingPacket.class, id(), NetworkDirection.PLAY_TO_SERVER)
+                .decoder(WhistlingPacket::new)
+                .encoder(WhistlingPacket::toBytes)
+                .consumerMainThread(WhistlingPacket::handle)
                 .add();
     }
 

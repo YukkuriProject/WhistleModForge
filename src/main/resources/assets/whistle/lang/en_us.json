@@ -1,9 +1,10 @@
 {
   "itemGroup.whistle_main": "Whistle Mod",
+  "key.category.whistle.main": "Whistle Mod",
+  "key.whistle.whistling": "Whistling Whistle",
 
   "item.whistle.whistle": "Whistle",
   "block.whistle.whistle_block": "Whistle Block",
   "string.whistle.whistle_cannotuse": "You can use this if world have other player",
-  "key.category.whistle.main": "Whistle Mod",
-  "key.whistle.whistling": "Whistling Whistle"
+  "string.whistle.whistle_notfound": "Not found Whistle in your inventory"
 }

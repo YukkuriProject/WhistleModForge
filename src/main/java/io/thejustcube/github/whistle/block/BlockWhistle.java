@@ -4,6 +4,7 @@ import io.thejustcube.github.whistle.item.ItemWhistle;
 import io.thejustcube.github.whistle.register.WhistleModItems;
 import io.thejustcube.github.whistle.util.Whistle;
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -29,8 +30,9 @@ public class BlockWhistle extends Block {
             if (!player.getCooldowns().isOnCooldown(whistle)) {
                 Whistle.use(level, player, whistle);
             }
+        } else {
+            player.displayClientMessage(Component.translatable("string.whistle.whistle_notfound"), true);
         }
-
 
         return InteractionResult.SUCCESS;
     }

@@ -3,7 +3,7 @@ package io.thejustcube.github.whistle.event;
 import io.thejustcube.github.whistle.client.KeyBinds;
 import io.thejustcube.github.whistle.main.WhistleMod;
 import io.thejustcube.github.whistle.network.ModNetworking;
-import io.thejustcube.github.whistle.network.packet.WhistleC2SPacket;
+import io.thejustcube.github.whistle.network.packet.WhistlingPacket;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.InputEvent;
@@ -18,7 +18,7 @@ public class ClientEvents {
         public static void onKeyInput(InputEvent.Key event) {
             if (KeyBinds.WHISTLING_KEY.consumeClick()) {
                 if (Minecraft.getInstance().player != null) {
-                    ModNetworking.sendToServer(new WhistleC2SPacket());
+                    ModNetworking.sendToServer(new WhistlingPacket());
                 }
             }
         }

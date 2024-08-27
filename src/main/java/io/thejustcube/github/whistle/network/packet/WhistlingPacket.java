@@ -11,12 +11,12 @@ import net.minecraftforge.event.network.CustomPayloadEvent;
 
 import java.util.Set;
 
-public class WhistleC2SPacket {
-    public WhistleC2SPacket() {
+public class WhistlingPacket {
+    public WhistlingPacket() {
 
     }
 
-    public WhistleC2SPacket(FriendlyByteBuf buf) {
+    public WhistlingPacket(FriendlyByteBuf buf) {
 
     }
 
